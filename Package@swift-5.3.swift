@@ -16,7 +16,7 @@ let package = Package(
         .binaryTarget(
             name: "AppCenter",
             url: "https://github.com/microsoft/appcenter-sdk-apple/releases/download/4.1.1/AppCenter-SDK-Apple-XCFramework-4.1.1.zip",
-            checksum: "7d5cef21ed6eb69f753d302a593b9557c95509dd3e9c2d147dc29749c8d35f20"
+            checksum: "3dd421f36c1b423d4637d854cbcfb973104c1cb3148419dd142bdadff5362682"
         )
     ]
 )
