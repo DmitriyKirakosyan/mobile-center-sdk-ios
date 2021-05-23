@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "AppCenter", targets: ["AppCenter"]),
         .library(name: "AppCenterAnalytics", targets: ["AppCenterAnalytics"]),
         .library(name: "AppCenterCrashes", targets: ["AppCenterCrashes"]),
-        .library(name: "AppCenterDistribute", targets: ["AppCenterDistribute"])
+        .library(name: "AppCenterDistribute", targets: ["AppCenterDistribute", "AppCenterDistributeResources"])
     ],
     dependencies: [
     ],
@@ -34,7 +34,12 @@ let package = Package(
         .binaryTarget(
             name: "AppCenterDistribute",
             url: "https://github.com/DmitriyKirakosyan/mobile-center-sdk-ios/releases/download/v1.0/AppCenterDistribute.xcframework.zip",
-            checksum: "9a4e8669e7340c3bb6d6d9bd1efa60aee49d455bfc288ea6112a6a4b88a7f0c7",
+            checksum: "9a4e8669e7340c3bb6d6d9bd1efa60aee49d455bfc288ea6112a6a4b88a7f0c7"
+        ),
+        .target(
+            name: "AppCenterDistributeResources",
+            path: "AppCenterDistribute/AppCenterDistribute",
+            exclude: ["Support"],
             resources: [
                 .process("Resources/AppCenterDistribute.strings"),
             ]
