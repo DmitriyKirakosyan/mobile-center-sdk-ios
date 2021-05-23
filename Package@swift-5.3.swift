@@ -8,10 +8,7 @@ import PackageDescription
 let package = Package(
     name: "AppCenter",
     products: [
-        .library(name: "AppCenter", targets: ["AppCenter"]),
-        .library(name: "AppCenterAnalytics", targets: ["AppCenterAnalytics"]),
-        .library(name: "AppCenterCrashes", targets: ["AppCenterCrashes"]),
-        .library(name: "AppCenterDistribute", targets: ["AppCenterDistribute"])
+        .library(name: "AppCenter", targets: ["AppCenter"])
     ],
     dependencies: [
     ],
