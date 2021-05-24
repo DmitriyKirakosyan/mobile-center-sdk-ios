@@ -40,7 +40,19 @@ let package = Package(
         .target(
             name: "AppCenterDistributeResources",
             path: "AppCenterDistribute/AppCenterDistribute",
-            exclude: ["Support", "include", "Internals", "Model"],
+            exclude: [
+                "Support",
+                "include",
+                "Internals",
+                "Model",
+                "AppCenterDistribute.h",
+                "MSACAlertController.h", "MSACAlertController.m",
+                "MSACBasicMachOParser.h", "MSACBasicMachOParser.m", "MSACBasicMachOParserPrivate.h",
+                "MSACDistribute.h", "MSACDistribute.m",
+                "MSACDistributeDelegate.h",
+                "MSACDistributePrivate.h",
+                "MSACDistributeUtil.h",
+                "MSACDistributeUtil.m"],
             resources: [
                 .process("Resources/AppCenterDistribute.strings"),
             ]
