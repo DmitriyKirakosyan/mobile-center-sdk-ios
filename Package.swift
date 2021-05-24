@@ -40,7 +40,7 @@ let package = Package(
         .target(
             name: "AppCenterDistributeResources",
             path: "AppCenterDistribute/AppCenterDistribute",
-            exclude: ["Support", "include", "Internals", "Model", "./"],
+            exclude: ["Support", "include", "Internals", "Model"],
             resources: [
                 .process("Resources/AppCenterDistribute.strings"),
             ]
