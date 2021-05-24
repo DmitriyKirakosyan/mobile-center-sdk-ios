@@ -7,6 +7,7 @@ import PackageDescription
 
 let package = Package(
     name: "AppCenter",
+    defaultLocalization: "en",
     products: [
         .library(name: "AppCenter", targets: ["AppCenter"]),
         .library(name: "AppCenterAnalytics", targets: ["AppCenterAnalytics"]),
